@@ -32,7 +32,7 @@ namespace Laba4OOP.src
             bool res = false;
             foreach(Shape shape in shapes)
             {
-                res = res || shape.checkPointPosition(new Point(point.X, point.Y));
+                res = shape.checkPointPosition(point) || res;
             }
             return res;
         }
